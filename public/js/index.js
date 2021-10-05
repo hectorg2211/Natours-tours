@@ -24,7 +24,7 @@ if (loginForm) {
     // Values
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
-    console.log('Submitting');
+    // console.log('Submitting');
     login(email, password);
   });
 }
@@ -40,7 +40,7 @@ if (userDataForm) {
     form.append('name', document.getElementById('name').value);
     form.append('email', document.getElementById('email').value);
     form.append('photo', document.getElementById('photo').files[0]);
-    console.log(form);
+    // console.log(form);
 
     updateSettings(form, 'data');
   });

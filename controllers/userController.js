@@ -59,8 +59,8 @@ exports.getMe = (req, res, next) => {
 exports.getAllUsers = factory.getAll(User);
 
 exports.updateMe = async (req, res, next) => {
-  console.log(req.file);
-  console.log(req.body);
+  // console.log(req.file);
+  // console.log(req.body);
   // 1) Create and error if the user tries to PATCH password data
   if (req.body.password || req.body.passwordConfirm) {
     return next(
